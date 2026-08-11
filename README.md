@@ -9,3 +9,4 @@ Clone the repository and enter the project directory:
 ```bash
 git clone https://github.com/HaofengWu20/M2SeisNet.git
 cd M2SeisNet
+bash seis.sh
