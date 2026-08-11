@@ -1,0 +1,20 @@
+##
+CUDA_VISIBLE_DEVICES=0 python classification_wu_v2_fusion_contrib_gate.py \
+  --d_model=64 \
+  --lr=0.001 \
+  --split=5 \
+  --epochs=200 \
+  --dropout=0.2 \
+  --n_layers=8 \
+  --batch_size=32 \
+  --port=12668 \
+  --tree_select=fading \
+  --weight_decay=0.03 \
+  --infra_downsample=11 \
+  --infra_max_length=3964 \
+  --infra_eps_ratio=0.05 \
+  --lambda_proto=0.1 \
+  --proto_margin=0.5 \
+  --beta_gate=0.1\
+  --alpha=0.1\
+  # --resume='logs/fusion_multires_gate_proto_contrib_gate/20260624_131815'
